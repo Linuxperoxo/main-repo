@@ -2,6 +2,7 @@
 # MAINTAINER: Linuxperoxo
 # Depends on: bash
 # Optional:
+# Desc: Command-line tool that displays stylized system operating information
 
 name="neofetch"
 version="7.1.0"
