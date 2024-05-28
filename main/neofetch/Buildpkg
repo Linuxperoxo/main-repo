@@ -9,8 +9,6 @@ version="7.1.0"
 extension="tar.gz"
 use_tools="Y"
 source_url="https://github.com/dylanaraps/${name}/archive/refs/tags/${version}.${extension}"
-desc="Command-line tool that displays stylized system operating information"
-
 
 pre_build()
 {	
