@@ -1,0 +1,28 @@
+# AUTHOR: Linuxperoxo
+# MAINTAINER: Linuxperoxo
+# Depends on: 
+# Optional: py3status
+# Desc: Command-line tool that displays stylized system operating information
+
+name="i3blocks"
+version="1.5"
+extension="tar.gz"
+use_tools="Y"
+source_url="https://github.com/vivien/$name/archive/refs/tags/$version.tar.gz"
+
+pre_build()
+{
+  cd $name-$version
+}
+
+build()
+{
+  ./autogen.sh
+  ./configure --prefix=/usr
+  make
+}
+
+install()
+{
+  make DESTDIR=$FAKEROOT/$name install
+}
