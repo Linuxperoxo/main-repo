@@ -1,0 +1,27 @@
+# AUTHOR: Linuxperoxo
+# MAINTAINER: Linuxperoxo
+# Depends on: Python3 PulseAudio
+# Optional:
+# Desc: CLI and curses mixer for PulseAudio
+
+name="pulsemixer"
+version="1.5.1"
+extension="tar.gz"
+use_tools=Y
+source_url="https://github.com/GeorgeFilipkin/$name/archive/refs/tags/$version.tar.gz"
+
+pre_build()
+{
+	cd $name-$version
+}
+
+build()
+{
+	chmod +x pulsemixer
+	mkdir -pv $FAKEROOT/$name/usr/bin
+}
+
+install()
+{
+	cp -v pulsemixer $FAKEROOT/$name/usr/bin
+}
