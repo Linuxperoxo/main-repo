@@ -1,3 +1,8 @@
+# AUTHOR: Linuxperoxo
+# MAINTAINER: Linuxperoxo
+# Depends on: autoconf automake autotools ncurses
+# Optional: sensors hwloc libcap libnl-3 libnl-genl-3
+
 name="htop"
 version="3.3.0"
 extension="tar.gz"
