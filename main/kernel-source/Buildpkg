@@ -2,6 +2,7 @@
 # MAINTAINER: Linuxperoxo
 # Depends on: gcc make binutils perl bc dracut 
 # Optional: grub
+# Desc: The core component of the Linux operating system
 
 name="kernel"
 version="6.9.2"
