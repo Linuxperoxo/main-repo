@@ -5,7 +5,7 @@
 # Desc: System monitoring tool for Unix-based systems like Linux
 
 name="htop"
-version="3.2.0"
+version="3.3.0"
 extension="tar.gz"
 use_tools="Y"
 source_url="https://github.com/${name}-dev/$name/archive/refs/tags/$version.tar.gz"
